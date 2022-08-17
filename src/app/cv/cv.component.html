@@ -1,0 +1,12 @@
+<div class="container">CV </div>
+<div class="row"> 
+    <div class="col-md-6">
+        <app-item (msgToCV)="selectedCandidat=$event"></app-item>
+       </div>
+    <div *ngIf="selectedCandidat" class="col-md-6">
+        <app-detail  [candidatDetails]="selectedCandidat"></app-detail>
+    </div>
+</div>
+<div class="row">
+    <app-recruted></app-recruted>
+</div>

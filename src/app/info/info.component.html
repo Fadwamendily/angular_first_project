@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="card">
+        <div class="card-img-top">
+            <img src="../../assets/{{info.avatar}}" width="200px" height="200px" alt="">
+        </div>
+        <div class="card-body">
+            <h1>Prénom:{{info.prenom}}</h1>
+            <h2>Nom:{{info.nom}}</h2>
+            <h3>Age:{{info.age}}</h3>
+            <h4>Profession:{{info.profession}}</h4>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-warning" [routerLink]="['edit']">Mettre à jour</button>
+            <button class="btn btn-danger" (click)="deleteCandidatById(info._id)">Supprimer</button>
+        </div>
+    </div>
+</div>

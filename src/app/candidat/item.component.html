@@ -1,0 +1,8 @@
+<div >
+<ul class="list-group">
+    <li [class.selected]="candidat === selectedCandidat"
+    *ngFor="let candidat of candidats" class="list-group-item"  (click)="onSelect(candidat)">
+ <img src="../../assets/{{candidat.avatar}}" alt="" style="width: 50px;">  {{candidat.prenom}} {{candidat.nom }}
+</li>
+</ul>
+</div>
